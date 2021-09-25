@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--adding styles css-->
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 <body>
-<h1 th:text="${viajero}">Hola mundo </h1>
+    <h1 th:text="${viajero}">Hola mundo </h1><br>
+    <p th:text="${viajero2}"></p><br><br>
+    <!--cualquiera de las dos siguientes formas
+    es valida para ver recursos-->
+    <img th:src="@{/imgs/realMadrid.jpg}" >
+    <img src="/imgs/realMadrid.jpg">
 </body>
 </html>
